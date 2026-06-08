@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISO2 PARDUS SYSTEM</title>
+    <style>
+        /* Tamamen saf CSS - Hiçbir harici kütüphane veya link kullanılmadı */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif; user-select: none; }
+        
+        body, html { 
+            width: 100%; 
+            height: 100%; 
+            overflow: hidden; 
+            background-color: #141923; /* Pardus Kara Tahta Arka Planı */
+            color: #fff; 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: space-between; 
+        }
+
+        /* Üst Bar: Kapatma Butonu */
+        .top-bar { 
+            width: 100%; 
+            padding: 15px; 
+            display: flex; 
+            justify-content: flex-end; 
+        }
+        .power-btn { 
+            background: #ff3b30; 
+            color: white; 
+            padding: 6px 14px; 
+            border-radius: 20px; 
+            font-size: 12px; 
+            font-weight: bold; 
+            cursor: pointer; 
+        }
+
+        /* Orta Alan: ISO2 ve Simgeler */
+        .center-container { 
+            text-align: center; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center; 
+            gap: 25px; 
+            flex-grow: 1; 
+        }
+        .iso-title { 
+            font-size: 65px; 
+            font-weight: 900; 
+            color: #00f2fe; 
+            letter-spacing: 5px; 
+            text-shadow: 0 0 20px rgba(0, 242, 254, 0.6); 
+        }
+        .mouse-box { 
+            width: 90px; 
+            height: 90px; 
+            background: #0b0f19; 
+            border: 3px solid #ff007f; 
+            border-radius: 50%; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            font-size: 45px; 
+            box-shadow: 0 0 20px rgba(255, 0, 127, 0.6); 
+        }
+        .system-icons { 
+            display: flex; 
+            align-items: center; 
+            gap: 20px; 
+            font-size: 40px; 
+            background: rgba(255, 255, 255, 0.05); 
+            padding: 10px 25px; 
+            border-radius: 30px; 
+            border: 1px solid rgba(255, 255, 255, 0.1); 
+        }
+        .side-pc { 
+            transform: rotate(90deg); 
+            display: inline-block; 
+        }
+
+        /* Alt Görev Çubuğu */
+        .bottom-bar { 
+            width: 100%; 
+            height: 48px; 
+            background: #090d16; 
+            display: flex; 
+            align-items: center; 
+            justify-content: space-between; 
+            padding: 0 20px; 
+            font-size: 13px; 
+            border-top: 1px solid rgba(255, 255, 255, 0.05); 
+        }
+        .bar-start { 
+            display: flex; 
+            align-items: center; 
+            gap: 8px; 
+            font-weight: bold; 
+        }
+        .mode-btn { 
+            background: #ff007f; 
+            color: #fff; 
+            border: none; 
+            padding: 6px 14px; 
+            border-radius: 4px; 
+            font-weight: bold; 
+            font-size: 12px; 
+            cursor: pointer; 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="power-btn" onclick="alert('ISO2 Sistemi Kapatılıyor...')">KAPAT</div>
+    </div>
+
+    <div class="center-container">
+        <div class="iso-title">ISO2</div>
+        
+        <div class="mouse-box">🖱️</div>
+        
+        <div class="system-icons">
+            <span>⌨️</span>
+            <span>🐆</span>
+            <span class="side-pc">🖥️</span>
+        </div>
+    </div>
+
+    <div class="bottom-bar">
+        <div class="bar-start">
+            <span>🐆</span>
+            <span style="color: #aaa; letter-spacing: 1px;">PARDUS OS</span>
+        </div>
+        <div>
+            <button class="mode-btn" onclick="alert('Telefon Modu Aktif!')">📱 TELEFON MODUNA GEÇ</button>
+        </div>
+        <div style="color: #777;">21:50</div>
+    </div>
+
+</body>
+</html>
